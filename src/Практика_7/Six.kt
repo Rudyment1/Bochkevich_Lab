@@ -53,7 +53,7 @@ fun main(){
             if (score < 21) {
                 println("Хотите взять еще карту? yes или no")
                 val response = readln()
-                if (response == "no") {
+                if (response == "n") {
                     while (scopedealer < 17) {
                         if (cardNames.isNotEmpty()) {
                             val index2 = Random.nextInt(cardNames.size)
@@ -68,7 +68,7 @@ fun main(){
                         println("Вы выиграли!")
                         println("Вы хотите играть еще")
                         val answer= readln()
-                        if (answer=="yes"){
+                        if (answer=="y"){
                             score=0
                             scopedealer=0
                             handdealer.clear()
@@ -98,7 +98,7 @@ fun main(){
                         println("Вы проиграли!")
                         println("Вы хотите играть еще")
                         val answer= readln()
-                        if (answer=="yes"){
+                        if (answer=="y"){
                             score=0
                             scopedealer=0
                             handdealer.clear()
@@ -128,7 +128,7 @@ fun main(){
                         println("Ничья!")
                         println("Вы хотите играть еще")
                         val answer= readln()
-                        if (answer=="yes"){
+                        if (answer=="y"){
                             score=0
                             scopedealer=0
                             handdealer.clear()
@@ -156,7 +156,7 @@ fun main(){
                         else break
                     }
 
-                } else if (response == "yes") {
+                } else if (response == "y") {
                     val index = Random.nextInt(cardNames.size)
                     hand.add(cardNames[index])
                     score += cards[cardNames[index]] ?: 0
@@ -169,7 +169,7 @@ fun main(){
                         println("Вы проиграли!")
                         println("Вы хотите играть еще")
                         val answer= readln()
-                        if (answer=="yes"){
+                        if (answer=="y"){
                             score=0
                             scopedealer=0
                             handdealer.clear()
@@ -199,7 +199,7 @@ fun main(){
                         println("Вы выиграли!")
                         println("Вы хотите играть еще")
                         val answer= readln()
-                        if (answer=="yes"){
+                        if (answer=="y"){
                             score=0
                             scopedealer=0
                             handdealer.clear()
@@ -233,7 +233,7 @@ fun main(){
                 println("Вы выиграли!")
                 println("Вы хотите играть еще")
                 var answer= readln()
-                if (answer=="yes"){
+                if (answer=="y"){
                     score=0
                     scopedealer=0
                     handdealer.clear()
@@ -263,7 +263,7 @@ fun main(){
                 println("Вы проиграли!")
                 println("Вы хотите играть еще")
                 val answer= readln()
-                if (answer=="yes"){
+                if (answer=="y"){
                     score=0
                     scopedealer=0
                     handdealer.clear()
